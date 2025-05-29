@@ -1,45 +1,166 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>
-        Project
-        
-    </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nischal Raj Sigdel - Innovator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    section { min-height: 100vh; padding: 4rem 2rem; }
+    .hamburger { display: none; }
+    .nav-menu { display: flex; }
+    @media (max-width: 768px) {
+      .hamburger { display: block; }
+      .nav-menu { display: none; }
+      .nav-menu.active { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; width: 100%; background: #1e3a8a; }
+      .nav-menu.active li { padding: 1rem; }
+    }
+    .hero-bg { background: url('https://via.placeholder.com/1920x1080?text=Tech+Background') no-repeat center center/cover; }
+  </style>
 </head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Navigation Bar -->
+  <nav class="bg-gradient-to-r from-blue-900 to-indigo-800 fixed w-full top-0 z-20 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#home" class="text-2xl font-bold">Nischal Raj Sigdel</a>
+      <button class="hamburger md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <ul class="nav-menu space-x-6 md:flex">
+        <li><a href="#home" class="hover:text-blue-200">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-200">About</a></li>
+        <li><a href="#aspirations" class="hover:text-blue-200">Aspirations</a></li>
+        <li><a href="#resume" class="hover:text-blue-200">Resume</a></li>
+        <li><a href="#portfolio" class="hover:text-blue-200">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-blue-200">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<body>
-    
-    <a href="home.html">
-        <img src="logo.jpg" alt="logo"></a>
-        &emsp;&emsp;&emsp;&emsp;&emsp;
-        <a href='home.html'><button>Home</button></a>&emsp;&emsp;&emsp;
-        <select>
-            <!-- option tag starts -->
-                <option>Courses</option>
-                <option value="+2 Science">+2 Science</option>
-                <option value="+2 Management">+2 Management</option>
-                <option value="+2 Humanities">+2 Humanities</option>
-                <option value="BBS">BBS</option>
-                <option value="BSW">BSW</option>
-                <option value="+2 Law">+2 Law</option>
-                <option value="BCA">BCA</option>
-            <!-- option tag ends -->
-            </select>&emsp;&emsp;&emsp;
-        <a href='admission.html'><button>Admission</button></a>&emsp;&emsp;&emsp;
-        <a href='career.html'><button>Career</button></a>&emsp;&emsp;&emsp;
-        <a href='blog.html'><button>Blog</button></a>
+  <!-- Home Section -->
+  <section id="home" class="hero-bg flex items-center justify-center text-center" data-aos="fade-up">
+    <div class="container mx-auto px-4 py-20 bg-black bg-opacity-50 rounded-lg">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white">Nischal Raj Sigdel</h1>
+      <p class="text-xl md:text-2xl mb-6">Pioneering the Future of Photonics, BCI, and VR</p>
+      <a href="#about" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">Explore My Vision</a>
+    </div>
+  </section>
 
+  <!-- About Section -->
+  <section id="about" class="bg-gray-800" data-aos="fade-right">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div class="w-full md:w-1/3">
+        <img src="nischal.jpg" alt="Nischal Raj Sigdel" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
+      <div class="w-full md:w-2/3">
+        <h2 class="text-4xl font-bold mb-4">About Me</h2>
+        <p class="text-lg md:text-xl">
+          I am an electrical and electronics engineering student set to begin my journey at the University of Texas at Arlington this fall 2025. With a passion for cutting-edge technology, I’m diving into photonics chips, brain-computer interfaces (BCI), and innovative input/output systems, all aimed at creating fully immersive virtual reality experiences. My background includes hands-on experience in hardware, software, and leadership roles that fuel my drive to innovate.
+        </p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Aspirations Section -->
+  <section id="aspirations" class="bg-gradient-to-r from-indigo-800 to-blue-600" data-aos="zoom-in">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">My Aspirations</h2>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto">
+        My goal is to revolutionize technology by developing photonic chips for efficient data processing, brain-computer interfaces for seamless human-machine interaction, and advanced input/output systems. The ultimate vision is to integrate these into a fully immersive virtual reality platform that transforms how we experience digital worlds, blending innovation with practical impact.
+      </p>
+    </div>
+  </section>
 
+  <!-- Resume Section -->
+  <section id="resume" class="bg-gray-800" data-aos="fade-left">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Resume</h2>
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-2xl font-semibold mb-4">Education</h3>
+        <p class="mb-2"><strong>B.Sc. in Electrical and Electronics Engineering</strong> – University of Texas at Arlington, Fall 2025–Present (Expected)</p>
+        <p><strong>High School Diploma (Grade XII), Computer Science</strong> – Kathmandu Unified Secondary School, 2021–2023<br>A+ (GPA: 3.68)</p>
 
+        <h3 class="text-2xl font-semibold mb-4 mt-6">Experience</h3>
+        <p><strong>Operations Manager, Abroad Unbox</strong> – May 2024–Present<br>Managed operations and client engagement.</p>
+        <p><strong>Founder & Secretary, Leo Club of Kathmandu Tkapan</strong> – Apr 2023–Present<br>Organized cybersecurity and leadership workshops.</p>
+        <p><strong>Junior Hardware Technician, EDSON Technologies</strong> – Sep 2023–Jan 2024<br>Assembled PCs and resolved hardware issues.</p>
 
+        <h3 class="text-2xl font-semibold mb-4 mt-6">Skills</h3>
+        <ul class="list-disc list-inside mb-4">
+          <li>Technical: Hardware & Networking, C, HTML, CSS, JavaScript</li>
+          <li>Leadership: Operations Management, Event Coordination</li>
+        </ul>
 
+        <a href="resume.pdf" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">Download Resume</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="bg-gradient-to-r from-blue-700 to-indigo-900" data-aos="fade-up">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Portfolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="zoom-in">
+          <h3 class="text-xl font-semibold mb-2">Website Clone & Upgrade Project</h3>
+          <p class="mb-4">Cloned a school website with HTML, CSS, JavaScript, PHP, and enhanced its design.</p>
+          <a href="#" class="text-blue-300 hover:underline">View Project</a>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="zoom-in">
+          <h3 class="text-xl font-semibold mb-2">Water Filtration Project</h3>
+          <p class="mb-4">Developed an affordable charcoal-based water filtration system.</p>
+          <a href="#" class="text-blue-300 hover:underline">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-800" data-aos="fade-right">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Contact Me</h2>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto mb-6">
+        Reach out at <a href="mailto:nischalrajsigdel@gmail.com" class="text-blue-300 hover:underline">nischalrajsigdel@gmail.com</a>.<br>
+        Connect with me on <a href="https://www.linkedin.com/in/nischal-raj-sigdel/" class="text-blue-300 hover:underline">LinkedIn</a> or <a href="https://app.joinhandshake.com/profiles/g6h9fb" class="text-blue-300 hover:underline">Handshake</a>.
+      </p>
+      <div class="max-w-md mx-auto">
+        <form action="[Your Form Endpoint]" method="POST">
+          <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
+          <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 bg-gray-700 border border-gray-600 rounded-lg text-white" required>
+          <textarea name="message" placeholder="Your Message" class="w-full p-3 mb-4 bg-gray-700 border border-gray-600 rounded-lg text-white" rows="5" required></textarea>
+          <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg font-semibold hover:bg-blue-700">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-900 to-indigo-800 py-4">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Nischal Raj Sigdel. All rights reserved.</p>
+    </div>
+  </footer>
 
-
+  <!-- JavaScript for Hamburger Menu and AOS -->
+  <script>
+    AOS.init({ duration: 1000 });
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
 </body>
-
 </html>
